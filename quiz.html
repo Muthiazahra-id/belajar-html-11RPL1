@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <h1>QUIZ SINGKAT</h1>
+    <label>1.Siapakah Presiden Indonesia 2022? <br><br></label> Jawab :<input type="text" id="Presiden"> <br> <br>
+    <div id="presiden_responce"></div>
+    <label>2.Siapakah Menteri Pendidikan indonesia Sekarang? <br><br></label> Jawab :<input type="text" id="Menteri Pendidikan"> <br><br>
+    <div id="Menteri_responce"></div>
+    <label>3.Siapakah Presiden Indonesia Ketiga? <br><br></label> Jawab :<input type="text" id="Presiden"><br><br>
+    <div id="presiden_responce"></div>
+    <label>4.Siapakah Presiden Indonesia Kedua? <br><br></label> Jawab :<input type="text" id="Presiden"><br><br>
+    <div id="presiden_responce"></div>
+    <label>5.Siapakah Presiden Indonesia Pertama? <br><br></label> Jawab :<input type="text" id="Presiden">
+    <div id="presiden_responce"></div> <br><br>
+
+
+    <button onclick="cek_jawaban">Kirim</button>
+
+    <script>
+        function cek_jawaban() {
+            const presiden = document.querySelector('#presiden')
+            const presiden_responce = document.querySelector('#presiden_responce')
+            const Menteri = document.querySelector('#Menteri')
+            const Menteri_responce = document.querySelector('#Menteri_responce')
+            if (presiden_responce.value == 'jokowi') {
+                presiden_responce.innerHTML = 'jawaban Kamu benar'
+            } else presiden_responce.innerHTMl = 'jawaban Kamu Salah'
+
+            if (Menteri_responce.value == 'nadiem') {
+                Menteri_responce.innerHTML = 'jawaban Kamu benar'
+            } else Menteri_responce.innerHTMl = 'jawaban Kamu Salah'
+        }
+    </script>
+</body>
+
+</html>
